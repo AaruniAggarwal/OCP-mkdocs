@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Playbook - Automation for OpenShift on IBM Power</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Playbook";
+    var mkdocs_page_input_path = "playbook.md";
+    var mkdocs_page_url = "/playbook/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Automation for OpenShift on IBM Power</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../automation/">Automation</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../introduction/">Introduction</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ocp_kvm/">Ocp kvm</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ocs_kvm/">Ocs kvm</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">Playbook</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#introduction">Introduction</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#assumptions">Assumptions</a></li>
+        
+            <li><a class="toctree-l3" href="#bastion-ha-setup">Bastion HA setup</a></li>
+        
+            <li><a class="toctree-l3" href="#set-up-the-required-variables">Set up the required variables</a></li>
+        
+            <li><a class="toctree-l3" href="#setting-up-inventory">Setting up inventory</a></li>
+        
+            <li><a class="toctree-l3" href="#run-the-playbook">Run the playbook</a></li>
+        
+            <li><a class="toctree-l3" href="#license">License</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../powervm/">Powervm</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../powervs/">Powervs</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../terraform/">Terraform</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Automation for OpenShift on IBM Power</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Playbook</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="introduction">Introduction</h1>
+<p>The <a href="https://github.com/ocp-power-automation/ocp4-playbooks">playbooks</a> are used for installation of OCP on Power and other post install customizations.
+The playbooks are used with <a href="https://github.com/ocp-power-automation/ocp4_upi_powervs">PowerVS</a>, <a href="https://github.com/ocp-power-automation/ocp4_upi_powervm">PowerVC</a>
+and <a href="https://github.com/ocp-power-automation/ocp4_upi_kvm">KVM</a> projects.</p>
+<h2 id="assumptions">Assumptions</h2>
+<ul>
+<li>A bastion/helper node is already created where the playbooks would run.</li>
+<li>The required services are configured on the bastion/helper node using <a href="https://github.com/RedHatOfficial/ocp4-helpernode">helpernode playbook</a>.</li>
+<li>The cluster nodes are already created.</li>
+</ul>
+<h2 id="bastion-ha-setup">Bastion HA setup</h2>
+<p>We can have multiple bastion nodes as part of the OpenShift 4.X setup. Ensure that all the required services are configured on all the bastion nodes. Also, keepalived service should be configured and running.</p>
+<p>To use this playbook for bastion HA you need to:
+1. Run helpernode playbook with <a href="https://github.com/RedHatOfficial/ocp4-helpernode/blob/master/docs/examples/vars-ha-ppc64le.yaml#L48-L57">HA configurations</a>.
+1. Use <code>bastion_vip</code> variable with keepalived vrrp address.
+1. Add <code>bastion</code> host group entries with all bastion nodes in <code>examples/inventory</code>.</p>
+<p>The OpenShift install commands will always run on the first bastion. Additional services such as squid proxy, chrony, etc. will be configured on all nodes. The auth directory and ignition files will be available on all nodes once the installation complete.</p>
+<h2 id="set-up-the-required-variables">Set up the required variables</h2>
+<p>Make use of the sample file at <code>examples/install_vars.yaml</code>. Modify the values as per your cluster.</p>
+<pre><code>cp examples/install_vars.yaml .
+</code></pre>
+
+<h3 id="use-install_varsyaml">Use install_vars.yaml</h3>
+<p>This section sets the variables for the install-config.yaml template file.</p>
+<pre><code>install_config:
+   cluster_domain: &lt; Cluster domain name. Match to the baseDomain in install-config.yaml.&gt;
+   cluster_id: &lt; Cluster identifier. Match to the metadata.name in install-config.yaml.&gt;
+   pull_secret: '&lt;pull-secret json content&gt;'
+   public_ssh_key: '&lt;SSH public key content to access the cluster nodes&gt;'
+</code></pre>
+
+<p>Below variables will be used by the OCP install playbook.</p>
+<pre><code>workdir: &lt;Directory to use for creating OCP configs&gt;
+storage_type: &lt;Storage type used in the cluster. Eg: nfs (Note: Currently NFS provisioner is not configured using this playbook. This variable is only used for setting up image registry to EmptyDir if storage_type is not nfs)&gt;
+log_level: &lt;Option --log-level in openshift-install commands. Default is 'info'&gt;
+release_image_override: '&lt;This is set to OPENSHIFT_INSTALL_RELEASE_IMAGE_OVERRIDE while creating ign files. If you are using internal artifactory then ensure that you have added auth key to the pull_secret&gt;'
+rhcos_kernel_options: &lt;List of kernel options for RHCOS nodes eg: [&quot;slub_max_order=0&quot;,&quot;loglevel=7&quot;]&gt;
+</code></pre>
+
+<h2 id="setting-up-inventory">Setting up inventory</h2>
+<p>Make use of sample file at <code>examples/inventory</code>. Modify the host values as per your cluster.</p>
+<pre><code>cp examples/inventory .
+</code></pre>
+
+<h2 id="run-the-playbook">Run the playbook</h2>
+<p>Once you have configured the vars &amp; inventory file, run the install playbook using:</p>
+<pre><code>ansible-playbook  -i inventory -e @install_vars.yaml playbooks/install.yaml
+</code></pre>
+
+<h2 id="license">License</h2>
+<p>See LICENCE.txt</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../powervm/" class="btn btn-neutral float-right" title="Powervm">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../ocs_kvm/" class="btn btn-neutral" title="Ocs kvm"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../ocs_kvm/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../powervm/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../js/theme.js"></script>
+
+</body>
+</html>
