@@ -155,8 +155,13 @@
               
                 <h1 id="table-of-contents"><strong>Table of Contents</strong></h1>
 <ul>
+<li><a href="#table-of-contents"><strong>Table of Contents</strong></a></li>
 <li><a href="#introduction">Introduction</a></li>
-<li><a href="#pre-requisites">Pre-requisites</a></li>
+<li><a href="#pre-requisites">Pre-requisites</a><ul>
+<li><a href="#operating-systems">Operating Systems</a></li>
+<li><a href="#packages">Packages</a></li>
+</ul>
+</li>
 <li><a href="#image-and-lpar-requirements">Image and LPAR requirements</a></li>
 <li><a href="#ocp-install">OCP Install</a></li>
 <li><a href="#contributing">Contributing</a></li>
@@ -186,7 +191,7 @@ on installing the latest Git.</li>
 </ul>
 <h1 id="image-and-lpar-requirements">Image and LPAR requirements</h1>
 <p>You'll need to create RedHat CoreOS (RHCOS) and RHEL 8.0 (or later) image in PowerVC. For RHCOS image creation, follow the steps mentioned
-in the following <a href="./docs/coreos-image-creation.md">doc</a>.</p>
+in the following <a href="https://github.com/ocp-power-automation/ocp4-upi-powervm/blob/master/docs/coreos-image-creation.md">doc</a>.</p>
 <p>Following are the recommended LPAR configs for OpenShift nodes that will be deployed with RHCOS image.
 - Bootstrap, Master - 2 vCPUs, 16GB RAM, 120 GB Disk.</p>
 <p>PowerVM LPARs by default uses SMT=8. So with 2vCPUs, the number of logical CPUs as seen by the Operating System will be <strong>16</strong> (<code>2 vCPUs x 8 SMT</code>)</p>
@@ -196,7 +201,7 @@ in the following <a href="./docs/coreos-image-creation.md">doc</a>.</p>
 <p>Following is the recommended LPAR config for the helper node that will be deployed with RHEL 8.0 (or later) image.
 - Helper node (bastion) - 2vCPUs, 16GB RAM, 200 GB Disk</p>
 <h1 id="ocp-install">OCP Install</h1>
-<p>Follow these <a href="docs/quickstart.md">quickstart</a> steps to kickstart OCP installation on PowerVM LPARs managed via PowerVC</p>
+<p>Follow these <a href="https://github.com/ocp-power-automation/ocp4-upi-powervm/blob/master/docs/quickstart.md">quickstart</a> steps to kickstart OCP installation on PowerVM LPARs managed via PowerVC</p>
 <h1 id="contributing">Contributing</h1>
 <p>Please see the <a href="https://github.com/ocp-power-automation/ocp4-upi-powervm/blob/master/CONTRIBUTING.md">contributing doc</a> for more details.
 PRs are most welcome !!</p>
