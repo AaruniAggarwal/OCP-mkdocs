@@ -1,39 +1,29 @@
-# Welcome to Automation for OpenShift on IBM Power Systems
+# Deploying OpenShift on IBM Power Systems
+
+Red Hat and IBM Power teams have been working together on OpenShift since 2018 with the initial release of OpenShift 3.11 on Power. Through this continuous collaboration and effort between IBM and Red Hat, the joint venture has enabled Power Systems clients to create new digital experiences that leverage modern cloud-native technologies and extend the value of their existing investments in AIX and IBM i. 
+
+![Automation Architecture](https://github.com/ktania46/image/blob/main/OCPPowerAutomationArchDiag.png?raw=true)
+
+Based on Kubernetes 1.19, OpenShift 4.6 introduced several exciting new capabilities for Power: Extended Update Support (EUS), the first EUS-enabled release in the 4.x stream. Now clients can remain on OCP 4.6 for a longer period of time with enterprise support. Support for compute nodes with up to 512 threads. Clients running scale-up Power Systems nodes (e.g., E980s) can exploit all that compute power, further realizing Power's container density and TCO benefits. Several storage-related enhancements, such as support for 4K sector drives and enablement for additional storage options such as HostPath, iSCSI and local-storage-operator. While this is just a few of the exciting new features in OCP 4.6, it demonstrates how OpenShift continues driving innovation as the leading hybrid cloud platform.
 
 ## Contents:
 
-- [OCS-UPI-KVM](ocs_kvm.md)
-    - Overview 
-    - User Requirements 
-    - Scripts 
-    - Chron tab Automation  </br>
-&nbsp;
-- [OCP4-UPI-PowerVS](powervs.md)
+- [Deploying OpenShift on IBM Cloud Power Virtual Servers](powervs.md)
      - Introduction 
      - Automation Host Prerequisites 
      - PowerVS Prerequisites 
      - OCP Install </br>
 &nbsp;
-- [OCP4-UPI-KVM](ocp_kvm.md)
+- [Deploying OpenShift on KVM](ocp_kvm.md)
      - Introduction 
      - Prerequisites
      - Image and VM Requirements 
      - OCP Install </br>
 &nbsp;
-- [OCP4-UPI-PowerVM](powervm.md)
+- [Deploying OpenShift on PowerVM managed via PowerVC ](powervm.md)
      - Introduction 
      - Prerequisites 
      - Image and LPAR Requirements 
      - OCP Install </br>
 &nbsp;
-- [PowerVS_Automation](automation.md)</br>
-&nbsp;
-- [OCP4-Playbooks](playbook.md)
-     - Introduction 
-     - Assumptions 
-     - Bastion and HA Setup </br>
-&nbsp;
-- [Terraform-Provider-IBM](terraform.md)
-    - Terraform Provider 
-    - Requirements 
-    - IBM Clouds Ansible Modules </br>
+

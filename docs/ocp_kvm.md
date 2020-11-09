@@ -1,6 +1,6 @@
-# **Table of Contents**
+**<h1 style="text-align:center; font-size:">Deploying OpenShift on KVM</h1>**
 
-- [**Table of Contents**](#table-of-contents)
+<!-- - [**Table of Contents**](#table-of-contents) -->
 - [Introduction](#introduction)
 - [Pre-requisites](#pre-requisites)
 - [Image and VM requirements](#image-and-vm-requirements)

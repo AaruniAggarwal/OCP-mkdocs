@@ -1,11 +1,11 @@
-# Table of Contents
+**<h2 style="text-align:center;">Deploying Openshift on IBM Cloud Power Virtual Servers</h2>**
+<!-- # Table of Contents -->
 
-- [Table of Contents](#table-of-contents)
-  - [Introduction](#introduction)
-  - [Automation Host Prerequisites](#automation-host-prerequisites)
-  - [PowerVS Prerequisites](#powervs-prerequisites)
-  - [OCP Install](#ocp-install)
-  - [Contributing](#contributing)
+- [Introduction](#introduction)
+- [Automation Host Prerequisites](#automation-host-prerequisites)
+- [PowerVS Prerequisites](#powervs-prerequisites)
+- [OCP Install](#ocp-install)
+- [Contributing](#contributing)
 
 
 ## Introduction

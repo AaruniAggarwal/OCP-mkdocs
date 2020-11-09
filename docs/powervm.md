@@ -1,6 +1,7 @@
-# **Table of Contents**
+**<h2 style="text-align:center;">Deploying OpenShift on PowerVM managed via PowerVC</h2>**
 
-- [**Table of Contents**](#table-of-contents)
+<!-- # **Table of Contents** -->
+
 - [Introduction](#introduction)
 - [Pre-requisites](#pre-requisites)
     - [Operating Systems](#operating-systems)
