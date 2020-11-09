@@ -52,7 +52,7 @@
     <a class="current" href=".">Home</a>
     <ul class="subnav">
             
-    <li class="toctree-l2"><a href="#welcome-to-automation-for-openshift-on-ibm-power-systems">Welcome to Automation for OpenShift on IBM Power Systems</a></li>
+    <li class="toctree-l2"><a href="#deploying-openshift-on-ibm-power-systems">Deploying OpenShift on IBM Power Systems</a></li>
     
         <ul>
         
@@ -136,18 +136,13 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="welcome-to-automation-for-openshift-on-ibm-power-systems">Welcome to Automation for OpenShift on IBM Power Systems</h1>
+                <h1 id="deploying-openshift-on-ibm-power-systems">Deploying OpenShift on IBM Power Systems</h1>
+<p>Red Hat and IBM Power teams have been working together on OpenShift since 2018 with the initial release of OpenShift 3.11 on Power. Through this continuous collaboration and effort between IBM and Red Hat, the joint venture has enabled Power Systems clients to create new digital experiences that leverage modern cloud-native technologies and extend the value of their existing investments in AIX and IBM i. </p>
+<p><img alt="Automation Architecture" src="https://github.com/ktania46/image/blob/main/OCPPowerAutomationArchDiag.png?raw=true" /></p>
+<p>Based on Kubernetes 1.19, OpenShift 4.6 introduced several exciting new capabilities for Power: Extended Update Support (EUS), the first EUS-enabled release in the 4.x stream. Now clients can remain on OCP 4.6 for a longer period of time with enterprise support. Support for compute nodes with up to 512 threads. Clients running scale-up Power Systems nodes (e.g., E980s) can exploit all that compute power, further realizing Power's container density and TCO benefits. Several storage-related enhancements, such as support for 4K sector drives and enablement for additional storage options such as HostPath, iSCSI and local-storage-operator. While this is just a few of the exciting new features in OCP 4.6, it demonstrates how OpenShift continues driving innovation as the leading hybrid cloud platform.</p>
 <h2 id="contents">Contents:</h2>
 <ul>
-<li><a href="ocs_kvm/">OCS-UPI-KVM</a><ul>
-<li>Overview </li>
-<li>User Requirements </li>
-<li>Scripts </li>
-<li>Chron tab Automation  </br>
-&nbsp;</li>
-</ul>
-</li>
-<li><a href="powervs/">OCP4-UPI-PowerVS</a><ul>
+<li><a href="powervs/">Deploying OpenShift on IBM Cloud Power Virtual Servers</a><ul>
 <li>Introduction </li>
 <li>Automation Host Prerequisites </li>
 <li>PowerVS Prerequisites </li>
@@ -155,7 +150,7 @@
 &nbsp;</li>
 </ul>
 </li>
-<li><a href="ocp_kvm/">OCP4-UPI-KVM</a><ul>
+<li><a href="ocp_kvm/">Deploying OpenShift on KVM</a><ul>
 <li>Introduction </li>
 <li>Prerequisites</li>
 <li>Image and VM Requirements </li>
@@ -163,27 +158,12 @@
 &nbsp;</li>
 </ul>
 </li>
-<li><a href="powervm/">OCP4-UPI-PowerVM</a><ul>
+<li><a href="powervm/">Deploying OpenShift on PowerVM managed via PowerVC </a><ul>
 <li>Introduction </li>
 <li>Prerequisites </li>
 <li>Image and LPAR Requirements </li>
 <li>OCP Install </br>
 &nbsp;</li>
-</ul>
-</li>
-<li><a href="automation/">PowerVS_Automation</a></br>
-&nbsp;</li>
-<li><a href="playbook/">OCP4-Playbooks</a><ul>
-<li>Introduction </li>
-<li>Assumptions </li>
-<li>Bastion and HA Setup </br>
-&nbsp;</li>
-</ul>
-</li>
-<li><a href="terraform/">Terraform-Provider-IBM</a><ul>
-<li>Terraform Provider </li>
-<li>Requirements </li>
-<li>IBM Clouds Ansible Modules </br></li>
 </ul>
 </li>
 </ul>
@@ -233,5 +213,5 @@
 
 <!--
 MkDocs version : 0.16.3
-Build Date UTC : 2020-11-09 07:00:37
+Build Date UTC : 2020-11-09 13:43:54
 -->
