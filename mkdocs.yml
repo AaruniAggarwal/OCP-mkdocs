@@ -3,8 +3,8 @@ site_url: https://example.com/foo/
 
 nav:
     - Home: index.md
-    - OCP4-UPI-PowerVS: powervs.md
-    - OCP4-UPI-KVM: ocp_kvm.md
-    - OCP4-UPI-PowerVM: powervm.md
+    - Deploying OpenShift on IBM Cloud Power Virtual Servers: powervs.md
+    - Deploying OpenShift on KVM: ocp_kvm.md
+    - Deploying OpenShift on PowerVM managed via PowerVC: powervm.md
    
 theme: readthedocs
