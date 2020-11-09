@@ -32,15 +32,15 @@ The automation needs to run from a system with internet access. This could be yo
 - Linux (x86_64)
 - Windows 10
 
-Follow the [guide](docs/automation_host_prereqs.md) to complete the prerequisites.
+Follow the [guide](https://github.com/ocp-power-automation/ocp4-upi-powervs/blob/master/docs/automation_host_prereqs.md) to complete the prerequisites.
 
 ## PowerVS Prerequisites
 
-Follow the [guide](docs/ocp_prereqs_powervs.md) to complete the PowerVS prerequisites.
+Follow the [guide](https://github.com/ocp-power-automation/ocp4-upi-powervs/blob/master/docs/ocp_prereqs_powervs.md) to complete the PowerVS prerequisites.
 
 ## OCP Install
 
-Follow the [quickstart](docs/quickstart.md) guide for OCP installation on PowerVS.
+Follow the [quickstart](https://github.com/ocp-power-automation/ocp4-upi-powervs/blob/master/docs/quickstart.md) guide for OCP installation on PowerVS.
 
 
 ## Contributing

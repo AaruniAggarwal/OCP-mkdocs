@@ -141,9 +141,9 @@ An implementation of generated Ansible modules using the
 
 ### Example Projects
 
-1. [VPC Virtual Server Instance](examples/ansible/examples/simple-vm-ssh/)
+1. [VPC Virtual Server Instance](https://github.com/ocp-power-automation/terraform-provider-ibm/tree/master/examples/ansible/examples/simple-vm-ssh)
 
-2. [Power Virtual Server Instance](examples/ansible/examples/simple-vm-power-vs/)
+2. [Power Virtual Server Instance](https://github.com/ocp-power-automation/terraform-provider-ibm/tree/master/examples/ansible/examples/simple-vm-power-vs)
 
 
 [IBM Cloud Terraform Provider]: https://github.com/IBM-Cloud/terraform-provider-ibm

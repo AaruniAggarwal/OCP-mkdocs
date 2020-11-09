@@ -4,7 +4,7 @@ Red Hat and IBM Power teams have been working together on OpenShift since 2018 w
 
 Ansible is an automation tool used to configure systems, deploy software, and perform rolling updates. Ansible includes support for container-native virtualization, and Ansible modules enable you to automate cluster management tasks such as template, persistent volume claim, and virtual machine operations. Ansible provides a way to automate container-native virtualization management, which you can also accomplish by using the oc CLI tool or APIs. Ansible is unique because it allows you to integrate KubeVirt modules with other Ansible modules.
 
-![Placeholder](https://github.com/ktania46/image/blob/main/OCPPowerAutomationArchDiag.png?raw=true)
+![Automation Architecture](https://github.com/ktania46/image/blob/main/OCPPowerAutomationArchDiag.png?raw=true)
 
 Playbooks are Ansible’s configuration, deployment, and orchestration language. They can describe a policy you want your remote systems to enforce, or a set of steps in a general IT process. If Ansible modules are the tools in your workshop, playbooks are your instruction manuals, and your inventory of hosts are your raw material.
 At a basic level, playbooks can be used to manage configurations of and deployments to remote machines. At a more advanced level, they can sequence multi-tier rollouts involving rolling updates, and can delegate actions to other hosts, interacting with monitoring servers and load balancers along the way.

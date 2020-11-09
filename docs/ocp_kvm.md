@@ -1,5 +1,6 @@
 # **Table of Contents**
 
+- [**Table of Contents**](#table-of-contents)
 - [Introduction](#introduction)
 - [Pre-requisites](#pre-requisites)
 - [Image and VM requirements](#image-and-vm-requirements)
@@ -23,13 +24,13 @@ Run this code from either Mac or Linux (Intel) system. For automating setup, see
 - **Git**: Please refer to the following [link](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) for instructions
 on installing `git` for Linux and Mac.
 - **Terraform >= 0.13**: Please refer to the following [link](https://learn.hashicorp.com/terraform/getting-started/install.html) for instructions on installing `terraform` for Linux and Mac. For validating the version run `terraform version` command after install.
-- **Terraform Providers**: Please ensure terraform providers are built and installed on Terraform Client Machine. You can follow the [Build Terraform Providers](docs/terraform-provider-build.md) guide.
-- **libvirt**: Please ensure `libvirt` is installed and configured on the KVM host. You can follow the [Libvirt Host setup](docs/libvirt-host-setup.md) guide.
+- **Terraform Providers**: Please ensure terraform providers are built and installed on Terraform Client Machine. You can follow the [Build Terraform Providers](https://github.com/ocp-power-automation/ocp4-upi-kvm/blob/master/docs/terraform-provider-build.md) guide.
+- **libvirt**: Please ensure `libvirt` is installed and configured on the KVM host. You can follow the [Libvirt Host setup](https://github.com/ocp-power-automation/ocp4-upi-kvm/blob/master/docs/libvirt-host-setup.md) guide.
 
 
 # Image and VM requirements
 
-For information on how to configure the images required for the automation see [Preparing Images for Power](docs/prepare-images.md).
+For information on how to configure the images required for the automation see [Preparing Images for Power](https://github.com/ocp-power-automation/ocp4-upi-kvm/blob/master/docs/prepare-images.md).
 
 Following are the recommended VM configs for OpenShift nodes that will be deployed with RHCOS image.
 - Bootstrap, Master - 4 vCPUs, 16GB RAM, 120 GB Disk
@@ -44,7 +45,7 @@ Following is the recommended VM config for the helper node that will be deployed
 
 # OCP Install
 
-Follow these [quickstart](docs/quickstart.md) steps to kickstart OCP installation on Power KVM using libvirt.
+Follow these [quickstart](https://github.com/ocp-power-automation/ocp4-upi-kvm/blob/master/docs/quickstart.md) steps to kickstart OCP installation on Power KVM using libvirt.
 
 # Contributing
 Please see the [contributing doc](https://github.com/ocp-power-automation/ocp4-upi-kvm/blob/master/CONTRIBUTING.md) for more details.

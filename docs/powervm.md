@@ -1,7 +1,10 @@
 # **Table of Contents**
 
+- [**Table of Contents**](#table-of-contents)
 - [Introduction](#introduction)
 - [Pre-requisites](#pre-requisites)
+    - [Operating Systems](#operating-systems)
+    - [Packages](#packages)
 - [Image and LPAR requirements](#image-and-lpar-requirements)
 - [OCP Install](#ocp-install)
 - [Contributing](#contributing)
@@ -44,7 +47,7 @@ on installing the latest Git.
 # Image and LPAR requirements
 
 You'll need to create RedHat CoreOS (RHCOS) and RHEL 8.0 (or later) image in PowerVC. For RHCOS image creation, follow the steps mentioned
-in the following [doc](./docs/coreos-image-creation.md).
+in the following [doc](https://github.com/ocp-power-automation/ocp4-upi-powervm/blob/master/docs/coreos-image-creation.md).
 
 Following are the recommended LPAR configs for OpenShift nodes that will be deployed with RHCOS image.
 - Bootstrap, Master - 2 vCPUs, 16GB RAM, 120 GB Disk.
@@ -61,7 +64,7 @@ Following is the recommended LPAR config for the helper node that will be deploy
 
 # OCP Install
 
-Follow these [quickstart](docs/quickstart.md) steps to kickstart OCP installation on PowerVM LPARs managed via PowerVC
+Follow these [quickstart](https://github.com/ocp-power-automation/ocp4-upi-powervm/blob/master/docs/quickstart.md) steps to kickstart OCP installation on PowerVM LPARs managed via PowerVC
 
 # Contributing
 Please see the [contributing doc](https://github.com/ocp-power-automation/ocp4-upi-powervm/blob/master/CONTRIBUTING.md) for more details.
