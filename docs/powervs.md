@@ -14,14 +14,14 @@
 
 This project leverages the helpernode [ansible playbook](https://github.com/RedHatOfficial/ocp4-helpernode) internally for OCP deployment on IBM Power Systems Virtual Servers (PowerVS).
 
-> #### <i class="fa fa-exclamation" style="color:red;"></i> For bugs/enhancement requests etc. please open a GitHub issue.
+> #### <i class="fa fa-exclamation" style="color:red;"></i> *For bugs/enhancement requests etc. please open a GitHub issue.*
 
 For general PowerVS usage instructions please refer to the following links:
 - https://cloud.ibm.com/docs/power-iaas?topic=power-iaas-getting-started
 - https://www.youtube.com/watch?v=RywSfXT_LLs
 - https://www.youtube.com/playlist?list=PLVrJaTKVPbKM_9HU8fm4QsklgzLGUwFpv
 
-> #### <i class="fa fa-info-circle" style="color:blue;"></i> This branch must be used with latest OCP pre-release versions only. For stable releases please checkout specific release branches - {release-4.5, release-4.6 ...} and follow the docs.
+> #### <i class="fa fa-info-circle" style="color:blue;"></i> *This branch must be used with latest OCP pre-release versions only. For stable releases please checkout specific release branches - {release-4.5, release-4.6 ...} and follow the docs.*
 
 
 ## Automation Host Prerequisites
