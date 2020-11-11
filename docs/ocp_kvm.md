@@ -18,7 +18,7 @@ helper node (bastion) for OCP deployment.
 Run this code from either Mac or Linux (Intel) system. For automating setup, see
 [OCP-UPI-KVM](https://github.com/ocp-power-automation/ocp-upi-kvm)
 
-:heavy_exclamation_mark: *This automation is intended for test/development purposes only and there is no formal support. For issues please open a GitHub issue*
+> <i class="fa fa-exclamation" style="color:red;"></i> *This automation is intended for test/development purposes only and there is no formal support. For issues please open a GitHub issue*
 
 # Pre-requisites
 - **Git**: Please refer to the following [link](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) for instructions

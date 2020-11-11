@@ -23,7 +23,7 @@ This project also leverages the same ansible playbook internally for OCP deploym
 Run this code from either Mac or Linux (Intel) system. For automating setup, see
 [OCP-UPI-PowerVM](https://github.com/ocp-power-automation/ocp4-upi-powervm)
 
-:heavy_exclamation_mark: *This automation is intended for test/development purposes only and there is no formal support. For bugs/enhancement requests etc. please open a GitHub issue*
+> <i class="fa fa-exclamation" style="color:red;"></i> *This automation is intended for test/development purposes only and there is no formal support. For bugs/enhancement requests etc. please open a GitHub issue*
 
 # Pre-requisites
 
