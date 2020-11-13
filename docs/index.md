@@ -1,6 +1,6 @@
 # Deploying OpenShift on IBM Power Systems
 
-Red Hat and IBM Power teams have been working together on OpenShift since 2018 with the initial release of OpenShift 3.11 on Power. Through this continuous collaboration and effort between IBM and Red Hat, the joint venture has enabled Power Systems clients to create new digital experiences that leverage modern cloud-native technologies and extend the value of their existing investments in AIX and IBM i. This Github organization is home to Infrastructure as Code (IaC) patterns to help deploy OpenShift on IBM Power Systems. Terraform is used to create the infrastructure and ansible playbooks are used to deploy and customer OpenShift. The following diagram shows the high level overview of the IaC pattern:
+This Github organization is home to Infrastructure as Code (IaC) patterns to help deploy OpenShift on IBM Power Systems. Terraform is used to create the infrastructure and ansible playbooks are used to deploy and customer OpenShift. The following diagram shows the high level overview of the IaC pattern:
 
 ![Automation Architecture](https://github.com/ktania46/image/blob/main/OCPPowerAutomationArchDiag.png?raw=true)
 
